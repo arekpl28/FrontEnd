@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <title>Document</title>
     <style>
       * {
@@ -15,23 +19,30 @@
         margin: 0 auto;
       }
       nav {
-        background-color: #ddd;
+        padding: 20px 0;
         text-align: right;
-        padding-right: 40px;
       }
       nav a {
         display: inline-block;
-        padding: 10px 25px;
-        margin: 10px 15px;
-        border: 2px solid brown;
+        padding: 10px 20px;
+        font-size: 22px;
         text-decoration: none;
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 20px;
         text-transform: uppercase;
+        font-family: "Roboto", sans-serif;
         color: brown;
+        margin: 0 15px;
         transition: 0.2s;
       }
+      a.btn4 {
+        border: 2px solid brown;
+        margin-left: 100px;
+        margin-right: 70px;
+        letter-spacing: 2px;
+      }
       nav a:hover {
+        border-bottom: 2px solid brown;
+      }
+      a.btn4:hover {
         background-color: brown;
         color: white;
       }
