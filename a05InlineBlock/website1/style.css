@@ -12,7 +12,7 @@ html {
 /* Navigation */
 
 nav {
-  max-width: 1400px;
+  max-width: 1440px;
   margin: 30px auto;
   text-align: right;
 }
@@ -54,7 +54,7 @@ header {
   height: 40vh;
   background-image: url(autoM.jpg);
   background-size: cover;
-  background-position: center;
+  background-position: center 20%;
 }
 
 header h1 {
@@ -63,6 +63,40 @@ header h1 {
   text-align: center;
   color: white;
   background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Main */
+
+main {
+  max-width: 1440px;
+  margin: 5vh auto;
+  text-align: center;
+}
+
+main p.description {
+  margin: 0 30px 40px 30px;
+  font-size: 1.4rem;
+  line-height: 160%;
+}
+
+main section.features {
+  font-size: 0;
+}
+
+main section div.feature {
+  display: inline-block;
+  width: 33.3333%;
+}
+
+main section div div.image {
+  height: 150px;
+  margin: 20px 40px;
+  background-color: cadetblue;
+}
+
+main section div h2 {
+  font-size: 1.8rem;
+  color: #222;
 }
 
 /* Footer */
