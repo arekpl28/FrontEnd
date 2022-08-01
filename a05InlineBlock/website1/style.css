@@ -64,3 +64,16 @@ header h1 {
   color: white;
   background-color: rgba(0, 0, 0, 0.5);
 }
+
+/* Footer */
+
+footer {
+  background-color: #000;
+}
+
+footer p {
+  padding: 20px 0;
+  font-size: 2rem;
+  text-align: center;
+  color: #eee;
+}
