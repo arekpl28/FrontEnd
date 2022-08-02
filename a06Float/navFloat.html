@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        height: 120vh;
+      }
+      nav {
+        background-color: #000;
+        /* height: 20px; */
+        overflow: hidden;
+      }
+      nav div.logo {
+        float: left;
+        width: 20%;
+        height: 40px;
+        margin-right: 10%;
+        background-color: brown;
+      }
+      nav ul {
+        float: left;
+        width: 70%;
+        height: 40px;
+        background-color: darkcyan;
+        list-style: none;
+      }
+      nav ul li {
+        float: left;
+        width: 25%;
+      }
+      nav ul li a {
+        display: block;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #eee;
+        line-height: 40px;
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        transition: 0.2s;
+      }
+      nav ul li a:hover {
+        background-color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="logo"></div>
+      <ul>
+        <li><a href="#">Menu 1</a></li>
+        <li><a href="#">Menu 2</a></li>
+        <li><a href="#">Menu 3</a></li>
+        <li><a href="#">Menu 4</a></li>
+      </ul>
+    </nav>
+  </body>
+</html>
