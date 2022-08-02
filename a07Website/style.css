@@ -90,12 +90,34 @@ nav ul li a:hover {
 /* Div Blog */
 
 div.blog {
+  max-width: 1440px;
+  margin: 40px auto;
 }
+
 div.blog main {
   float: left;
   width: 65%;
-  background-color: brown;
+  padding: 40px 20px 0 20px;
+  background-color: #ddd;
 }
+
+div.blog main article h1 {
+  margin: 10px 0;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+div.blog main article img {
+  float: left;
+  width: 200px;
+  margin: 0 20px 20px 0;
+}
+
+div.blog main article p {
+  font-size: 1.4rem;
+  text-align: justify;
+}
+
 div.blog aside {
   float: left;
   width: 35%;
