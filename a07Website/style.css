@@ -86,3 +86,16 @@ nav ul li a:hover {
   background-color: #fff;
   color: #222;
 }
+
+/* Footer */
+
+footer {
+  padding: 20px;
+  text-align: center;
+  background-color: #000;
+}
+
+footer p {
+  font-size: 1.8rem;
+  color: #eee;
+}
