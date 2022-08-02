@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      nav {
+        background-color: #000;
+        /*Solution number 1:   height: 100px; */
+        /*Solution number 2:   overflow: hidden; */
+      }
+
+      nav ul {
+        list-style: none;
+      }
+
+      nav ul li {
+        float: left;
+      }
+
+      nav ul li a {
+        display: block;
+        height: 60px;
+        line-height: 60px;
+        margin: 20px;
+        color: white;
+        background-color: green;
+      }
+
+      /* Solution number 3 */
+      .clear {
+        clear: both;
+        height: 0;
+      }
+
+      /* Solution number 4 */
+      .clearfix::after {
+        display: block;
+        content: "";
+        clear: both;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul class="clearfix">
+        <li><a href="#">element 1</a></li>
+        <li><a href="#">element 2</a></li>
+        <li><a href="#">element 3</a></li>
+        <li><a href="#">element 4</a></li>
+        <li><a href="#">element 5</a></li>
+        <!-- Solution number 3: <div class="clear"></div> -->
+      </ul>
+    </nav>
+    <section>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere dicta
+      laborum hic ipsum explicabo suscipit necessitatibus sint expedita fuga
+      quibusdam incidunt, qui dignissimos ratione molestiae, quos iste
+      repellendus debitis officia. Lorem ipsum dolor sit amet consectetur
+      adipisicing elit. Vitae, asperiores? Nemo saepe autem eos, doloremque ex
+      quaerat maiores expedita ipsam rem, consequatur voluptate aperiam corrupti
+      deleniti explicabo fugiat. Error, hic. Similique, ipsum! Odit magnam vero
+      inventore enim quam labore soluta eos tenetur laboriosam eligendi. Nemo
+      quibusdam perspiciatis, fuga quas officiis saepe cumque beatae? Dolor
+      praesentium ipsum reprehenderit cumque, qui placeat dignissimos nemo,
+      dolores consectetur dolorem pariatur tempore facere consequatur dolore
+      omnis deleniti nobis, culpa magnam modi voluptatibus aut autem? Ipsam,
+      reiciendis voluptatem? Illum sint error natus exercitationem iure, ab
+      suscipit provident ducimus, cum unde consequatur, ad nostrum mollitia
+      reprehenderit esse et inventore aperiam enim ratione rerum accusantium
+      labore. Ratione quia at quisquam cupiditate quas. Iusto perspiciatis modi
+      natus numquam eos incidunt dolorem, corrupti ipsum obcaecati vel
+    </section>
+  </body>
+</html>
