@@ -94,10 +94,12 @@ div.blog {
   margin: 40px auto;
 }
 
+/* Main */
+
 div.blog main {
   float: left;
   width: 65%;
-  padding: 40px 20px 0 20px;
+  padding: 20px 20px 0 20px;
   background-color: #ddd;
 }
 
@@ -118,11 +120,35 @@ div.blog main article p {
   text-align: justify;
 }
 
+/* Aside */
+
 div.blog aside {
   float: left;
-  width: 35%;
-  height: 300px;
-  background-color: gray;
+  width: 30%;
+}
+div.blog aside section.contact {
+  background-color: #aaa;
+}
+div.blog aside section.contact {
+  padding: 20px;
+}
+div.blog aside section.contact p.title {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+div.blog aside section.contact ul {
+  list-style: none;
+}
+div.blog aside section.contact ul li {
+  margin: 10px 0;
+  font-size: 1.6rem;
+}
+div.blog aside section.contact ul li i {
+  margin-right: 20px;
+}
+div.blog aside section.contact ul li a {
+  text-decoration: none;
+  color: black;
 }
 
 /* Footer */
