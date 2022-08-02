@@ -55,12 +55,15 @@ header div:nth-child(4):hover {
 /* Navigation */
 
 nav {
-  padding: 10px 0 10px 100px;
+  padding: 10px 0;
   margin: 20px 0;
   background-color: #000;
 }
 
 nav ul {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 40px;
   list-style: none;
 }
 
@@ -90,8 +93,9 @@ nav ul li a:hover {
 /* Div Blog */
 
 div.blog {
-  max-width: 1440px;
+  max-width: 1280px;
   margin: 40px auto;
+  padding: 0 40px;
 }
 
 /* Main */
@@ -99,7 +103,7 @@ div.blog {
 div.blog main {
   float: left;
   width: 65%;
-  padding: 20px 20px 0 20px;
+  padding: 20px 20px;
   background-color: #ddd;
 }
 
@@ -124,7 +128,7 @@ div.blog main article p {
 
 div.blog aside {
   float: left;
-  width: 30%;
+  width: 35%;
 }
 div.blog aside section.contact {
   background-color: #aaa;
