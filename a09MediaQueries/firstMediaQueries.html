@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      p {
+        line-height: 100vh;
+        padding: 0 5%;
+        font-size: 20px;
+        text-align: center;
+        text-transform: uppercase;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      @media (min-width: 360px) {
+        p {
+          font-size: 24px;
+          color: green;
+        }
+      }
+
+      @media (min-width: 400px) {
+        p {
+          font-size: 28px;
+          color: blue;
+        }
+      }
+
+      @media (min-width: 600px) {
+        p {
+          font-size: 34px;
+          color: orange;
+        }
+      }
+
+      @media (min-width: 1024px) {
+        p {
+          font-size: 50px;
+          color: orange;
+        }
+      }
+
+      @media (min-width: 1440px) {
+        p {
+          font-size: 80px;
+          color: orange;
+        }
+      }
+
+      @media (orientation: portrait) {
+        body {
+          background-color: aqua;
+        }
+      }
+
+      @media (orientation: landscape) {
+        body {
+          background-color: darkcyan;
+        }
+      }
+
+      @media (orientation: landscape) and (min-width: 640px) {
+        body {
+          background-color: red;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <p>Text on the website</p>
+  </body>
+</html>
