@@ -31,8 +31,8 @@ header img {
 header h1 {
   width: 100%;
   top: 45%;
-  font-size: 60px;
-  padding: 20px 0;
+  font-size: 6rem;
+  padding: 20px;
   letter-spacing: 3px;
   text-align: center;
   text-transform: uppercase;
@@ -44,7 +44,7 @@ header button {
   bottom: 80px;
   right: 80px;
   padding: 10px 60px;
-  font-size: 40px;
+  font-size: 4rem;
   letter-spacing: 2px;
   border: 4px solid #ddd;
   border-radius: 10px;
@@ -69,4 +69,66 @@ section p {
   line-height: 1.7;
   font-size: 1.4rem;
   text-align: justify;
+}
+
+@media (max-width: 926px) and (orientation: landscape) {
+  header img {
+    width: 20%;
+    top: 20px;
+    left: 40px;
+  }
+
+  header h1 {
+    top: 40%;
+    font-size: 3.6rem;
+  }
+
+  header button {
+    bottom: 40px;
+    right: 40px;
+    padding: 10px 40px;
+    font-size: 2.5rem;
+    border: 3px solid #ddd;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+}
+
+@media (max-width: 653px) and (orientation: landscape) {
+  header img {
+    left: 30px;
+  }
+
+  header h1 {
+    font-size: 2.6rem;
+    padding: 10px;
+  }
+
+  header button {
+    bottom: 30px;
+    right: 30px;
+    font-size: 2rem;
+    border: 2px solid #ddd;
+  }
+}
+
+@media (max-width: 428px) and (orientation: portrait) {
+  header img {
+    width: 70%;
+    left: 15%;
+  }
+
+  header h1 {
+    font-size: 3.3rem;
+    padding: 10px;
+    line-height: 130%;
+  }
+
+  header button {
+    width: 70%;
+    bottom: 30px;
+    right: 15%;
+    font-size: 2.4rem;
+    border: 2px solid #ddd;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
 }
