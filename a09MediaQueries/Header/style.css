@@ -10,10 +10,20 @@ html {
 }
 
 header {
+  position: relative;
   height: 100vh;
   background-image: url(bg.jpg);
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+header > * {
+  position: absolute;
+}
+
+header img {
+  top: 30px;
+  left: 60px;
 }
