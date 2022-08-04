@@ -27,3 +27,15 @@ header img {
   top: 30px;
   left: 60px;
 }
+
+header h1 {
+  width: 100%;
+  top: 45%;
+  font-size: 60px;
+  padding: 20px 0;
+  letter-spacing: 3px;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #ddd;
+}
