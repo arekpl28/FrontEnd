@@ -59,3 +59,14 @@ header button {
 header button:hover {
   background-color: rgba(0, 0, 0, 0.5);
 }
+
+section {
+  width: 86%;
+  margin: 80px auto 50px auto;
+}
+
+section p {
+  line-height: 1.7;
+  font-size: 1.4rem;
+  text-align: justify;
+}
