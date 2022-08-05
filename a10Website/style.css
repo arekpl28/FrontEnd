@@ -30,6 +30,7 @@ header div.welcome {
   text-align: center;
   text-transform: uppercase;
   color: white;
+  z-index: 1;
 }
 
 header div.welcome p {
@@ -141,6 +142,7 @@ header img {
   header img {
     width: 50vw;
   }
+
   header div.welcome {
     top: 15%;
     right: 50%;
@@ -244,6 +246,91 @@ header img {
     height: 90%;
     width: auto;
     right: -90px;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 1366px) {
+  header div.welcome p {
+    font-size: 9rem;
+  }
+
+  header div.welcome h1 {
+    font-size: 5rem;
+  }
+
+  header div.welcome h2 {
+    font-size: 4.5rem;
+  }
+
+  header div.welcome button {
+    line-height: 60px;
+    font-size: 3rem;
+    margin-top: 80px;
+    padding: 0 40px;
+    cursor: pointer;
+  }
+
+  header img {
+    right: -130px;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 1500px) {
+  header div.welcome {
+    top: 20%;
+    left: 5%;
+  }
+
+  header div.welcome p {
+    font-size: 12rem;
+  }
+
+  header div.welcome h1 {
+    font-size: 6rem;
+  }
+
+  header div.welcome h2 {
+    font-size: 6rem;
+  }
+
+  header div.welcome button {
+    line-height: 90px;
+    font-size: 3rem;
+    margin-top: 80px;
+    padding: 0 60px;
+  }
+
+  header img {
+    right: 0;
+  }
+}
+@media (min-width: 1500px) and (max-height: 800px) {
+  header div.welcome {
+    top: 10%;
+    left: 5%;
+  }
+
+  header div.welcome p {
+    font-size: 10rem;
+  }
+
+  header div.welcome h1 {
+    font-size: 5rem;
+  }
+
+  header div.welcome h2 {
+    font-size: 5rem;
+  }
+
+  header div.welcome button {
+    line-height: 70px;
+    font-size: 3rem;
+    margin-top: 60px;
+  }
+
+  header img {
+    height: 99%;
+    width: auto;
   }
 }
 
