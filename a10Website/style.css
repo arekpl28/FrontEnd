@@ -15,6 +15,8 @@ html {
 header {
   position: relative;
   height: 100vh;
+  max-width: 2048px;
+  margin: 0 auto;
   background-color: #29a6dc;
   overflow: hidden;
 }
@@ -268,6 +270,9 @@ header img {
     margin-top: 80px;
     padding: 0 40px;
     cursor: pointer;
+  }
+  header div.welcome button:hover {
+    background-color: #2286b2;
   }
 
   header img {
