@@ -12,6 +12,12 @@ html {
   font-family: "Saira Condensed", sans-serif;
 }
 
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
 header {
   position: relative;
   height: 100vh;
@@ -195,7 +201,7 @@ header img {
   }
 
   header img {
-    height: 95vh;
+    height: 90vh;
     width: auto;
   }
 }
@@ -309,6 +315,7 @@ header img {
     right: 0;
   }
 }
+
 @media (min-width: 1500px) and (max-height: 800px) {
   header div.welcome {
     top: 10%;
@@ -339,6 +346,105 @@ header img {
   }
 }
 
-section {
-  min-height: 100vh;
+/* Section 1 features */
+
+section.features {
+  max-width: 1600px;
+  margin: 50px auto;
+  padding: 5%;
+  text-align: center;
+}
+
+section.features h2 {
+  font-size: 2.6rem;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+section.features div.feature img {
+  width: 100%;
+  max-width: 375px;
+  margin: 5px 0;
+}
+
+section.features div.feature h3 {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+  font-weight: 300;
+}
+
+section.features div.feature p {
+  font-size: 1.2rem;
+  font-family: "Saira", sans-serif;
+}
+
+@media (min-width: 360px) {
+  section.features h2 {
+    font-size: 2.8rem;
+  }
+
+  section.features div.feature h3 {
+    font-size: 2.4rem;
+  }
+
+  section.features div.feature p {
+    font-size: 1.4rem;
+  }
+}
+
+@media (min-width: 768px) {
+  section.features h2 {
+    font-size: 4.4rem;
+  }
+
+  section.features div.feature h3 {
+    font-size: 3.4rem;
+  }
+
+  section.features div.feature p {
+    font-size: 1.8rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  section.features {
+    padding: 5% 2%;
+  }
+
+  section.features div.feature {
+    float: left;
+    width: 33.3333%;
+    padding: 0 20px;
+  }
+
+  section.features h2 {
+    font-size: 4.4rem;
+  }
+
+  section.features div.feature h3 {
+    font-size: 3rem;
+  }
+
+  section.features div.feature p {
+    font-size: 1.8rem;
+    text-align: justify;
+  }
+}
+
+@media (min-width: 1600px) {
+  section.features div.feature {
+    padding: 20px 40px;
+  }
+
+  section.features h2 {
+    font-size: 6rem;
+  }
+
+  section.features div.feature h3 {
+    font-size: 4rem;
+  }
+
+  section.features div.feature p {
+    font-size: 2.2rem;
+  }
 }
