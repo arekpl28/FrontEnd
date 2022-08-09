@@ -915,3 +915,14 @@ section.contact div.wrap div.socials div.social span {
     font-size: 6rem;
   }
 }
+
+/* Footer */
+
+footer p {
+  text-align: center;
+  padding: 20px;
+  font-size: 2rem;
+  background-color: #29a6dc;
+  font-family: "Saira", sans-serif;
+  color: white;
+}
