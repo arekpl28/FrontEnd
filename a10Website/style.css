@@ -666,6 +666,7 @@ section.hobby {
   max-width: 1920px;
   margin: 0 auto;
 }
+
 section.hobby h1 {
   padding: 20px;
   font-size: 2.3rem;
@@ -683,15 +684,19 @@ section.hobby div.items div.item {
 section.hobby div.items div.item:nth-of-type(1) {
   background-image: url(img/hobby1.jpg);
 }
+
 section.hobby div.items div.item:nth-of-type(2) {
   background-image: url(img/hobby2.jpg);
 }
+
 section.hobby div.items div.item:nth-of-type(3) {
   background-image: url(img/hobby3.jpg);
 }
+
 section.hobby div.items div.item:nth-of-type(4) {
   background-image: url(img/hobby4.jpg);
 }
+
 section.hobby div.items div.item p {
   font-size: 1.8rem;
   text-align: center;
@@ -709,6 +714,7 @@ section.hobby div.items div.item p {
     height: 50vh;
   }
 }
+
 @media (min-width: 768px) {
   section.hobby h1 {
     font-size: 4.8rem;
@@ -761,5 +767,151 @@ section.hobby div.items div.item p {
   }
   section.hobby div.items div.item:hover p {
     font-size: 4rem;
+  }
+}
+
+/* Section 5 Contact */
+
+section.contact {
+  background-color: #000;
+  padding: 20px;
+}
+
+section.contact h1 {
+  font-size: 2.3rem;
+  margin-bottom: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Saira Condensed", sans-serif;
+  color: white;
+}
+
+section.contact div.wrap {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+section.contact div.wrap form input,
+section.contact div.wrap form textarea,
+section.contact div.wrap form button {
+  width: 100%;
+  margin-bottom: 20px;
+  font-family: "Saira", sans-serif;
+  padding: 5px;
+  font-size: 1.2rem;
+}
+
+section.contact div.wrap form input {
+  height: 36px;
+}
+
+section.contact div.wrap form textarea {
+  height: 120px;
+}
+
+section.contact div.wrap form button {
+  font-size: 1.4rem;
+  line-height: 40px;
+  background-color: black;
+  color: white;
+  border: 2px solid white;
+  border-radius: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+section.contact div.wrap div.socials {
+  padding-top: 30px;
+}
+
+section.contact div.wrap div.socials div.social {
+  padding-top: 10px;
+}
+
+section.contact div.wrap div.socials div.social img {
+  float: left;
+}
+
+section.contact div.wrap div.socials div.social span {
+  float: left;
+  line-height: 72px;
+  padding-left: 30px;
+  font-size: 1.6rem;
+  color: white;
+}
+
+@media (min-width: 533px) {
+  section.contact div.wrap div.socials {
+    font-size: 0;
+  }
+
+  section.contact div.wrap div.socials div.social {
+    display: inline-block;
+    width: 50%;
+  }
+}
+
+@media (min-width: 1024px) {
+  section.contact h1 {
+    font-size: 4.8rem;
+    margin: 40px auto;
+  }
+
+  section.contact div.wrap form {
+    float: left;
+    width: 50%;
+  }
+
+  section.contact div.wrap form input,
+  section.contact div.wrap form textarea,
+  section.contact div.wrap form button {
+    margin-bottom: 30px;
+    padding: 10px;
+    font-size: 2.4rem;
+  }
+
+  section.contact div.wrap form input {
+    height: 46px;
+  }
+
+  section.contact div.wrap form textarea {
+    height: 200px;
+  }
+
+  section.contact div.wrap form button {
+    font-size: 2.2rem;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+
+  section.contact div.wrap form button:hover {
+    background-color: #fff;
+    color: black;
+  }
+
+  section.contact div.wrap div.socials {
+    float: left;
+    width: 50%;
+    padding: 0 0 0 50px;
+  }
+
+  section.contact div.wrap div.socials div.social {
+    display: block;
+    width: 60%;
+    margin: 0 auto;
+    padding: 0 0 10px 0;
+  }
+
+  section.contact div.wrap div.socials div.social span {
+    line-height: 72px;
+    padding-left: 30px;
+    font-size: 2rem;
+    color: white;
+  }
+}
+
+@media (min-width: 1600px) {
+  section.contact h1 {
+    font-size: 6rem;
   }
 }
