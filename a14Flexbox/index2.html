@@ -5,31 +5,103 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html {
+        font-size: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      div.wrapper {
+        display: flex;
+        flex-direction: column;
+        max-width: 1200px;
+        padding: 0 40px;
+        margin: 0 auto;
+      }
+      div.wrapper h1 {
+        font-size: 3rem;
+        padding: 30px;
+        text-align: center;
+        text-transform: uppercase;
+      }
+      div.wrapper div.sections {
+        display: flex;
+        height: 65vh;
+        justify-content: space-between;
+      }
+      div.wrapper div.sections section {
+        display: flex;
+        flex-direction: column;
+        width: 25%;
+        padding: 30px 30px;
+        background-color: #bbb;
+      }
+      div.wrapper div.sections section h2 {
+        font-size: 2rem;
+        text-align: center;
+        padding-bottom: 30px;
+      }
+      div.wrapper div.sections section img {
+        width: 80%;
+        align-self: center;
+        padding-bottom: 30px;
+      }
+      div.wrapper div.sections section div.description {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+      }
+      div.wrapper div.sections section div.description p {
+        font-size: 1.6rem;
+        text-align: center;
+        padding-bottom: 30px;
+      }
+      div.wrapper div.sections section button {
+        font-size: 2rem;
+        padding: 15px;
+        border: 2px solid black;
+        border-radius: 10px;
+        background-color: #eee;
+        cursor: pointer;
+      }
+    </style>
   </head>
   <body>
     <div class="wrapper">
       <h1>Bachelorette party - invite our troll.</h1>
-      <section>
-        <h2>Option 1</h2>
-        <img src="1.png" alt="" />
-        <p class="info">Really cheap</p>
-        <button>200$</button>
-      </section>
-      <section>
-        <h2>Option 2</h2>
-        <img src="2.png" alt="" />
-        <p class="info">Average cheap</p>
-        <p class="description">Great stick included</p>
-        <button>300$</button>
-      </section>
-      <section>
-        <h2>Option 3</h2>
-        <img src="2.png" alt="" />
-        <p class="info">Really cheap</p>
-        <p class="description">Lots of power</p>
-        <p class="description2">Handsome</p>
-        <button>400$</button>
-      </section>
+      <div class="sections">
+        <section>
+          <h2>Option 1</h2>
+          <img src="1.png" alt="" />
+          <div class="description">
+            <p>Really cheap</p>
+          </div>
+          <button>200$</button>
+        </section>
+        <section>
+          <h2>Option 2</h2>
+          <img src="2.png" alt="" />
+          <div class="description">
+            <p>Average cheap</p>
+            <p>Great stick included</p>
+          </div>
+          <button>300$</button>
+        </section>
+        <section>
+          <h2>Option 3</h2>
+          <img src="2.png" alt="" />
+          <div class="description">
+            <p>Really cheap</p>
+            <p>Lots of power</p>
+            <p>Handsome</p>
+          </div>
+          <button>400$</button>
+        </section>
+      </div>
     </div>
   </body>
 </html>
