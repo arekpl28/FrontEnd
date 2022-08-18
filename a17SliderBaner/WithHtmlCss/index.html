@@ -178,5 +178,40 @@
         <h2>JS programmer</h2>
       </div>
     </section>
+    <script>
+      // Parameters
+      let activeElement = 0;
+      const timeChange = 4000;
+
+      // We collect 4 elements on which we work
+      const colorImgHtml = document.querySelector(".color");
+      const grayImgHtml = document.querySelector(".gray");
+      const h1Html = document.querySelector(".member h1");
+      const h2Html = document.querySelector(".member h2");
+
+      // Information in arrays about replaced elements
+      const colorImages = ["../s1.png", "../s2.png", "../s3.png"];
+      const grayImages = ["../s1a.png", "../s2a.png", "../s3a.png"];
+      const names = ["Anna Baugart", "Marek Feliksiak", "Arek Pawłowicz"];
+      const professions = [
+        "JS Programer",
+        "UX i UI Designer",
+        "Front-End Developer",
+      ];
+
+      function changeElement() {
+        activeElement++;
+        console.log(activeElement);
+        if (activeElement === colorImages.length) {
+          activeElement = 0;
+        }
+        colorImgHtml.src = colorImages[activeElement];
+        grayImgHtml.src = grayImages[activeElement];
+        h1Html.textContent = names[activeElement];
+        h2Html.textContent = professions[activeElement];
+      }
+
+      setInterval(changeElement, timeChange);
+    </script>
   </body>
 </html>
